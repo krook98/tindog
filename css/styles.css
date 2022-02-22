@@ -7,6 +7,9 @@
 #features {
     display: inline-block;
     padding: 5% 15%;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
 }
 
 p {
@@ -37,7 +40,7 @@ h3 {
 }
 
 .container-fluid {
-    padding: 3% 15%;
+    padding: 3% 15% 7%;
 }
 
 /* Navigation Bar */
@@ -71,6 +74,7 @@ h3 {
     width: 60%;
     transform: rotate(20deg);
     margin-left: 15%;
+    position: absolute;
 }
 
 .feature-box {
@@ -125,4 +129,14 @@ h3 {
 
   .pricing-column {
       padding: 3% 2%;
+  }
+
+  @media (max-width: 1028px) {
+      #title {
+          text-align: center;
+      }
+      .title-image {
+          position: static;
+          transform: rotate(0);
+      }
   }
